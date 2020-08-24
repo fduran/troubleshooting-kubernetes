@@ -18,12 +18,29 @@ The purpose of this guide is to help Kubernetes practicioners — in particular
 	* [Distributed Tracing](#distributed-tracing)
 	* [Inspecting Kubernetes Servers](#inspecting-kubernetes-servers)
 	* [Other Tools](#other-tools)
-- [Troubleshooting Kubernetes Objects](#troubleshooting-kubernetes-objects)
-	* [Services](#services)
-- [Troubleshooting Kubernetes Servers](#troubleshooting-kubernetes-servers)
-	* [API Server](#api-server)
-- [Troubleshooting Kubernetes Cloud Providers](#troubleshooting-kubernetes-cloud-providers)
-	* [GKE](#gke)
+- [Troubleshooting Kubernetes](#troubleshooting-kubernetes)
+	* [Logging](#logging)
+	* [Clusters](#clusters)
+	* [Applications](#applications)
+	* [Kubernetes Objects](#kubernetes-objects)
+		+ [Services](#services)
+		+ [Pods](#pods)
+		+ [Nodes](#nodes)
+		+ [StatefulSets](#statefulsets)
+		+ [ReplicationControllers](#replicationcontrollers)
+		+ [Deployments](#deployments)
+		+ [IngressControllers](#ingresscontrollers)
+	* [Kubernetes Services](#kubernetes-services)
+		+ [API Server](#api-server)
+		+ [etcd](#etcd)
+		+ [Metrics Server](#metrics-server)
+		+ [Networking](#networking)
+	* [RBAC](#rbac)
+	* [Linux](#linux)
+	* [Kubernetes Cloud Providers](#troubleshooting-kubernetes-cloud-providers)
+		+ [GKE](#gke)
+		+ [AKS](#aks)
+		+ [EKS](#eks)
 - [Prevention](#prevention)
 	* [Best Practices](#best-practices)
 		+ [Test Environments](#test-environments)
@@ -54,12 +71,17 @@ Intro
 ### Preparedness
 Preparedness
 
+Know your system. 
+Maintenance: purge deleted objects
+
 
 ### Incidence Response
 Incidence Response
 
 ### Troubleshooting Techniques
 Troubleshooting Techniques
+
+
 
 ## Tooling
 Tooling
@@ -89,6 +111,9 @@ Other Tools
 ## Troubleshooting Kubernetes Objects
 Troubleshooting Kubernetes Objects
 
+### Logging
+Audit policy defines rules about what events should be recorded and what data they should include.
+
 ### Services
 Services
 
@@ -98,10 +123,26 @@ Troubleshooting Kubernetes Servers
 ### API Server
 API Server
 
+### etcd
+etcd
+
+### Metrics Server
+Metrics Server
+
+### Networking
+Debugging CNI, DNS 
+
 ## Troubleshooting Kubernetes Cloud Providers
 Troubleshooting Kubernetes Cloud Providers
 
 ### GKE
+GKE
+
+### AKS
+AKS
+
+### EKS
+EKS
 
 ## Prevention
 Prevention
